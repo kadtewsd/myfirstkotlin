@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
-@SpringBootTest(classes = arrayOf(MykotlinApplication::class, TestConfig::class))
+@SpringBootTest(classes = [MykotlinApplication::class, TestConfig::class])
 @ActiveProfiles("test")
 abstract class AbstractBaseTest {
 
